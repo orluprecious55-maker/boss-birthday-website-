@@ -1,0 +1,171 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f4f7fb;
+  color: #222;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 80, 0.411), rgba(0, 0, 80, 0.7)),
+            url('My boss .jpg') center/cover no-repeat;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Intro Section */
+.intro {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.intro h2 {
+  color: #003366;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.1em;
+  color: #444;
+}
+
+/* Cards Section */
+.cards {
+  background-color: #e9f2ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cards h2 {
+  color: #003366;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card video,
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.card h3 {
+  color: #003366;
+  margin: 15px 0 10px;
+}
+
+.card p {
+  color: #555;
+  padding: 0 15px 20px;
+}
+
+
+/* Wishes Section */
+.wishes {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.wishes h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.wishes p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  background-color: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+/* Make the site look great on phones */
+@media (max-width: 768px) {
+  .memory-moment {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  h1, h2, h3, p {
+    text-align: center;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
